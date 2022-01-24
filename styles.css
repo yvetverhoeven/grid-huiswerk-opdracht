@@ -1,1 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 /*Maak hier jouw CSS!*/
+.grid-container {
+    background: #2F4858;
+    color: #336699;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+    grid-template-areas: "a"
+                         "c"
+                         "b"
+                         "e"
+                         "d"
+                         "f"
+                         "g";
+}
+
+ @media screen and (min-width: 576px) {
+     .grid-container {
+         grid-template-columns:2fr 1fr 1fr;
+         grid-template-rows: 50px 240px 100px auto 50px;
+         grid-template-areas:
+                "a b b"
+                "c b b"
+                "c d e"
+                "c d f"
+                "g g g";
+         grid-gap: 16px 16px;
+
+     }
+ }
+
+.grid-item {
+    background-color: #9EE493;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+   margin: 3px;
+}
+
+.grid-header {
+    grid-area: a;
+}
+
+.grid-main {
+    grid-area: c;
+}
+
+.grid-c {
+    grid-area: b;
+}
+
+.grid-d {
+    grid-area: e;
+}
+
+.grid-e {
+    grid-area: d;
+}
+
+.grid-f {
+    grid-area: g;
+}
+
+.grid-dynamic {
+    grid-area: f;
+    visibility: hidden;
+}
+
+
