@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
 }
+
 /*Maak hier jouw CSS!*/
+
 .grid-container {
-    background: #2F4858;
-    color: #336699;
+    background-color: #33261D;
+    color: #FCBFB7;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
@@ -21,7 +23,7 @@
  @media screen and (min-width: 576px) {
      .grid-container {
          grid-template-columns:2fr 1fr 1fr;
-         grid-template-rows: 50px 240px 100px auto 50px;
+         grid-template-rows: 50px 190px 100px auto 50px;
          grid-template-areas:
                 "a b b"
                 "c b b"
@@ -34,7 +36,7 @@
  }
 
 .grid-item {
-    background-color: #9EE493;
+    background-color: #334E58;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -68,8 +70,10 @@
 }
 
 .grid-dynamic {
+    color: white;
     grid-area: f;
     visibility: hidden;
+    border-color:#334E58;
 }
 
 
